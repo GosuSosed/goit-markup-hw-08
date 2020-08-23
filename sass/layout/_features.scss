@@ -1,0 +1,37 @@
+.features-list {
+    display: flex;
+}
+.feature-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+.bg-feature-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: $team-bg-color;
+    width: 270px;
+    height: 120px;
+}
+.feature-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    color: $main-text-color;
+    margin-bottom: 10px;
+}
+.features-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color:  $secondary-text-color;
+}
+.section > .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: $main-text-color;
+}

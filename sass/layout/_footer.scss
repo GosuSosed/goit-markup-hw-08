@@ -1,0 +1,108 @@
+.footer {
+    background-color: $footer-bg-color;
+    & .container {
+        display: flex;
+        align-items: baseline;
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+    & .logo-name {
+        color: $main-bg-color;
+        margin-bottom: 20px;
+        margin-right: auto;
+    }
+  }
+  .adress-bot {
+      margin-right: 69px;
+  }
+  .adress-list-item:not(:last-child) {
+      margin-bottom: 10px;
+  }
+  .adress-list {
+      & .map {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      color: $main-bg-color;
+    }
+      & .link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        color: rgba(255, 255, 255, 0.6);
+    }
+  }
+  .join-us {
+      margin-right: 95px;
+      &-list {
+        display: flex;
+        justify-content: center;
+    }
+  }
+  .join-us-list-item:not(:last-child) {
+      margin-right: 10px;
+  }
+  .social-link {
+      display: flex;
+      width: 44px;
+      height: 44px;
+      fill: $main-bg-color;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+          background-color: $accent-text-color;
+      }
+  }
+  .social-link-svg {
+      width: 20px;
+      height: 20px;
+  }
+  .action {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.15;
+      text-transform: uppercase;
+      color: $main-bg-color;
+      display: block;
+      margin-bottom: 20px;
+  }
+  .button-main-bot {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.87;
+      letter-spacing: 0.06em;
+      color: $main-bg-color;
+      background-color: $accent-text-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      width: 200px;
+      height: 50px;
+      padding: 10px 28px;
+  }
+  .follow {
+      display: flex;
+  }
+  .enter {
+      width: 358px;
+      height: 50px;
+      padding: 16px 15px;
+      margin-right: 10px;
+      background-color: $footer-bg-color;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+  }
+  .envelope {
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+      fill: $main-bg-color;
+  }
