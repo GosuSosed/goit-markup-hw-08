@@ -96,6 +96,8 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: $main-text-color;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 .link-primary {
     font-weight: 500;
@@ -108,7 +110,7 @@
     animation-duration: 500ms;
     &::after {
         position: absolute;
-        bottom: -100%;
+        bottom: 0;
         left: 0;
         display: block;
         content: "";
@@ -156,6 +158,10 @@
 }
 
 @media screen and (min-width:768px) {
+    .header {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
     .btn-menu {
         display: none;
     }
@@ -188,13 +194,15 @@
     }
     .list-nav-link {
         &:not(:last-child){
-            margin: 0 auto;
+            margin-bottom: 0;
             margin-right: 50px;
         }
     }
     .navigation-list-link {
         font-size: 14px;
         line-height: 1.16;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
     .link-primary {
         font-size: 14px;

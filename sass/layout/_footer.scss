@@ -1,48 +1,57 @@
 .footer {
     background-color: $footer-bg-color;
     & .container {
-        display: flex;
-        align-items: baseline;
-        padding-top: 70px;
-        padding-bottom: 100px;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
     & .logo-name {
         color: $main-bg-color;
         margin-bottom: 20px;
+        margin-left: auto;
         margin-right: auto;
     }
   }
-  .adress-bot {
-      margin-right: 69px;
-  }
-  .adress-list-item:not(:last-child) {
-      margin-bottom: 10px;
-  }
-  .adress-list {
-      & .map {
+.adress-bot {
+      margin-bottom: 60px;
+}
+.adress-list {
+    & .map {
       font-weight: 400;
       font-size: 14px;
       line-height: 1.71;
       color: $main-bg-color;
     }
-      & .link {
+    & .link {
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         color: rgba(255, 255, 255, 0.6);
     }
-  }
-  .join-us {
-      margin-right: 95px;
+}
+.adress-list-item:not(:last-child) {
+      margin-bottom: 8px;
+}
+.join-us {
+      margin-bottom: 60px;
       &-list {
         display: flex;
         justify-content: center;
     }
-  }
-  .join-us-list-item:not(:last-child) {
+}
+.action {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    color: $main-bg-color;
+    display: block;
+    margin-bottom: 20px;
+}
+.join-us-list-item:not(:last-child) {
       margin-right: 10px;
   }
-  .social-link {
+.social-link {
       display: flex;
       width: 44px;
       height: 44px;
@@ -56,21 +65,22 @@
       &:focus {
           background-color: $accent-text-color;
       }
-  }
-  .social-link-svg {
+}
+.social-link-svg {
       width: 20px;
       height: 20px;
-  }
-  .action {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.15;
-      text-transform: uppercase;
-      color: $main-bg-color;
-      display: block;
+}
+.enter {
+      width: 100%;
+      height: 50px;
+      padding: 16px 15px;
       margin-bottom: 20px;
-  }
-  .button-main-bot {
+      background-color: $footer-bg-color;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+}
+.button-main-bot {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -83,26 +93,70 @@
       background-color: $accent-text-color;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       border-radius: 4px;
-      width: 200px;
+      max-width: 200px;
       height: 50px;
       padding: 10px 28px;
+      margin-left: auto;
+      margin-right: auto;
   }
-  .follow {
-      display: flex;
-  }
-  .enter {
-      width: 358px;
-      height: 50px;
-      padding: 16px 15px;
-      margin-right: 10px;
-      background-color: $footer-bg-color;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-      border-radius: 4px;
-  }
-  .envelope {
+.envelope {
       width: 24px;
       height: 24px;
       margin-left: 10px;
       fill: $main-bg-color;
   }
+@media screen and (min-width: 768px){
+    .footer {
+        & .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .adress-bot {
+        margin-right: 165px;
+    }
+    .enter {
+        width: 450px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .footer {
+        & .container {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: nowrap;
+            text-align: start;
+            padding-top: 72px;
+            padding-bottom: 100px;
+        }
+        & .logo-name {
+            color: $main-bg-color;
+            font-size: 26px;
+            line-height: 1.19;
+            margin-bottom: 20px;
+        }
+    }
+    .adress-bot {
+        margin-bottom: 0;
+        margin-right: 70px;
+    }
+    .adress-list-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .join-us {
+          margin-bottom: 0;
+          margin-right: 93px;
+    }
+      .follow {
+          display: flex;
+      }
+      .enter {
+          max-width: 358px;
+          margin-bottom: 0;
+          margin-right: 10px;
+      }
+}
