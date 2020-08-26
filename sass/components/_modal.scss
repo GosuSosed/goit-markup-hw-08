@@ -11,15 +11,7 @@
     opacity: 0;
     pointer-events: none;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-}
-.modal-title {
-    display: inline-block;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    margin-bottom: 12px;
+    }
 }
 .forma {
     position: absolute;
@@ -28,12 +20,20 @@
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
     background: $main-bg-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+}
+.modal-title {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 12px;
 }
 .forma-close {
     position: absolute;
@@ -79,7 +79,7 @@
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding: 12px 42px;
+    padding: 11px 12px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     &:focus {
@@ -98,7 +98,7 @@
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
     }
-  }
+}
   .forma-icon {
     position: absolute;
     top: 50%;
@@ -117,7 +117,6 @@
       outline: none;
     }
 }
-
 .forma-field:focus-within > .forma-name {
     color: $accent-text-color;
 }
@@ -167,16 +166,16 @@
     align-items: center;
     width: 100%;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     margin: 0 auto;
     color: $secondary-text-color;
 }
 .dogovor {
     text-decoration: underline;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     color: $accent-text-color;
     margin-left: 6px;
 }
@@ -201,3 +200,193 @@
         background: #188CE8;
     }
 }
+
+
+// .modal-title {
+//     display: inline-block;
+//     font-weight: 700;
+//     font-size: 20px;
+//     line-height: 1.15;
+//     text-align: center;
+//     margin-bottom: 12px;
+// }
+// .forma {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     display: flex;
+//     flex-direction: column;
+//     width: 528px;
+//     height: 581px;
+//     padding: 40px;
+//     background: $main-bg-color;
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 4px;
+// }
+// .forma-close {
+//     position: absolute;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     top: 8px;
+//     right: 8px;
+//     width: 30px;
+//     height: 30px;
+//     background: $main-bg-color;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     border-radius: 50%;
+//     &:hover .forma-close-icon,
+//     &:focus .forma-close-icon {
+//         fill: $accent-text-color;
+//     } 
+// }
+// .forma-close-icon {
+//     cursor: pointer;
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .forma-field {
+//     position: relative;
+//     display: block;
+//     cursor: pointer;
+//    &:not(:last-child) {
+//     margin-bottom: 10px;
+//    }
+// }
+// .forma-name {
+//     display: inline-block;
+//     margin-bottom: 4px;
+//     font-weight: 400;
+//     font-size: 12px;
+//     line-height: 1.16;
+//     letter-spacing: 0.01em;
+//     color: $secondary-text-color;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .forma-input {
+//     width: 100%;
+//     height: 40px;
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     border-radius: 4px;
+//     padding: 12px 42px;
+//     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     cursor: pointer;
+//     &:focus {
+//         outline: none;
+//     }
+//     &:focus:required:valid {
+//     border-color: $accent-text-color;
+//     }
+//     &:focus:required:invalid {
+//         border-color: $accent-text-color;
+//     }
+//     &::placeholder {
+//     font-weight: 400;
+//     font-size: 12px;
+//     line-height: 1.16;
+//     letter-spacing: 0.01em;
+//     color: rgba(117, 117, 117, 0.5);
+//     }
+//   }
+//   .forma-icon {
+//     position: absolute;
+//     top: 50%;
+//     left: 12px;
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+//   .textarea-input {
+//     resize: none;
+//     width: 100%;
+//     height: 120px;
+//     padding: 12px 16px;
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     border-radius: 4px;
+//     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     &:focus {
+//       outline: none;
+//     }
+// }
+
+// .forma-field:focus-within > .forma-name {
+//     color: $accent-text-color;
+// }
+// .forma-field:focus-within > .forma-input {
+//     border-color: 1px solid $accent-text-color;
+// }
+// .forma-field:focus-within > .forma-icon {
+//     fill: $accent-text-color;
+// }
+// .forma-checkbox {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     margin-top: 20px;
+//     margin-bottom: 30px;
+// }
+// .checkbox {
+//     position: absolute;
+//     width: 1px;
+//     height: 1px;
+//     margin: -1px;
+//     border: 0;
+//     padding: 0;
+//     clip: rect(0 0 0 0);
+//     overflow: hidden;
+//     &:checked + .icon-checkbox {
+//         border-color: transparent;
+//         background-color: $accent-text-color;
+//         background-image: url(../images/chek-icon.svg);
+//         background-size: contain;
+//         background-origin: border-box;
+//     }
+// }
+// .icon-checkbox {
+//     display: inline-block;
+//     width: 16px;
+//     height: 15px;
+//     border: 2px solid $main-text-color;
+//     border-radius: 2px;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .text-dogovor {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     margin: 0 auto;
+//     color: $secondary-text-color;
+// }
+// .dogovor {
+//     text-decoration: underline;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.71;
+//     color: $accent-text-color;
+//     margin-left: 6px;
+// }
+// .send-btn {
+//     width: 200px;
+//     height: 50px;
+//     padding: 10px 55px;
+//     margin: 0 auto;
+//     background-color: $accent-text-color;
+//     color: $main-bg-color;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.87;
+//     display: flex;
+//     align-items: center;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     cursor: pointer;
+//     &:hover {
+//         background: #188CE8;
+//     }
+// }
