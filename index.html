@@ -19,12 +19,12 @@
           <use href="./images/sprite.svg#icon-menu-close" class="burger-close"></use>
         </svg>
         </button>
-        <div class="menu-wrapper" data-menu >
+        <div class="menu-wrapper" data-menu>
         <nav class="nav">
           <ul class="list-nav">
               <li class="list-nav-link"><a class="animate__rollIn navigation-list-link navigation-list-link-primary link-primary" href="./index.html">Студия</a></li>
               <li class="list-nav-link"><a class="navigation-list-link link" href="./portfolio.html">Портфолио</a></li>
-              <li class="list-nav-link"><a class="navigation-list-link link" href="./contacts.html">Контакты</a></li>
+              <li class="list-nav-link"><a class="navigation-list-link link" href="#contacts">Контакты</a></li>
           </ul>
         </nav>
       <!-- контакты хедера -->
@@ -49,7 +49,7 @@
     <main>
         <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button class="button-main-top" data-modal-open>Заказать услугу</button>
+            <button class="button-main-top" data-modal-open >Заказать услугу</button>
         </section>
         <!-- особенности -->
         <section class="section">
@@ -263,7 +263,7 @@
       <div class="container">
        <div class="adress-bot">
         <a class="logo-name" href="./index.html"><span class="name-web">Web</span>Studio</a>
-        <ul class="adress-list">
+        <ul class="adress-list" id="contacts">
           <li class="adress-list-item"><a class="map" href="https://goo.gl/maps/bgj35x1De3ZqhRjR8" target="_blank">г. Киев, пр-т Леси Украинки, 26</a></li>
           <li class="adress-list-item"><a class="link" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a></li>
           <li class="adress-list-item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
@@ -307,7 +307,7 @@
 
     <div class="backdrop container is-hidden" data-modal>
       <div class="modal">
-        <form class="forma" action="#"> 
+        <form class="forma" action=""> 
         <button type="button" class="forma-close" data-modal-close><svg class="forma-close-icon" width="18" height="18"><use href="./images/sprite.svg#icon-close"></use></svg></button> 
           <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
           <label class="forma-field">

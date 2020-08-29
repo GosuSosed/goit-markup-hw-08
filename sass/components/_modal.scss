@@ -82,7 +82,7 @@
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding: 11px 12px;
+    padding: 12px 42px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     &:focus {
@@ -259,6 +259,9 @@
         font-size: 12px;
         line-height: 1.16;
     }
+}
+.forma-checkbox {
+    max-width: 425px;
 }
 .text-dogovor {
     font-size: 14px;
