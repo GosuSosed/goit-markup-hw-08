@@ -1015,7 +1015,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-  max-width: 480px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/mob-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1176,10 +1175,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .we-do {
-    display: none;
-  }
+.we-do {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1376,12 +1373,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .clients-list-item {
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
-
 .clients {
   text-align: center;
 }
@@ -1397,14 +1388,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .clients-list-item {
   margin-bottom: 30px;
+  flex-basis: calc((100% - 30px) / 2);
 }
 
 .clients-list-item:not(:nth-child(2n)) {
   margin-right: 30px;
-}
-
-.clients-list-item:not(:nth-last-child(-n+3)) {
-  margin-bottom: 30px;
 }
 
 .clients-link {
@@ -1432,6 +1420,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width: 768px) {
+  .clients-list-item {
+    flex-basis: auto;
+  }
   .clients-list-item:not(:nth-child(3n)) {
     margin-right: 30px;
   }
